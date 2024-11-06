@@ -8,9 +8,10 @@ namespace nLayeredDesign.Entity.Concrete
 {
     public class Category
     {
-        // field - variable - property 
         public int CategoryId { get; set; }
         public string CategoryName { get; set; }
         public bool CategoryStatus { get; set; }
+
+        public ICollection<Product> Products { get; set; }
     }
 }

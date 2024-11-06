@@ -13,5 +13,10 @@ namespace nLayeredDesign.Entity.Concrete
         public int ProductStock { get; set; }
         public int ProductPrice { get; set; }
         public string ProductDescription { get; set; }
+
+        public int CatgeoryId { get; set; }
+        public virtual Category Category { get; set; }
+
+        public ICollection<Order> Orders { get; set; }
     }
 }

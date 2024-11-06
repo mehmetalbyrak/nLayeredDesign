@@ -43,5 +43,11 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\nLayeredDesign.DataAccess\nLayeredDesign.DataAccess.csproj">
+      <Project>{c00cb6c7-18da-4d0f-a00c-fc9ec7447f3d}</Project>
+      <Name>nLayeredDesign.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
