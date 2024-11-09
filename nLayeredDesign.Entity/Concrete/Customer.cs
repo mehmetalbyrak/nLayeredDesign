@@ -13,6 +13,7 @@ namespace nLayeredDesign.Entity.Concrete
         public string  CustomerLastName { get; set; }
         public string CustomerDistrict { get; set; }
         public string CustomerCity { get; set; }
+        public bool CustomerStatus { get; set; }
 
         public ICollection<Order> Orders { get; set; }
     }
