@@ -13,6 +13,5 @@ namespace nLayeredDesign.DataAccess.Abstract
         void Delete(int id);
         List<T> GetAll();
         T GetById(int id);
-
     }
 }

@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nLayeredDesign.Business", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "nLayeredDesign.Presentation", "nLayeredDesign.Presentation\nLayeredDesign.Presentation.csproj", "{C355C606-BD03-42E3-9EBD-A477976D4059}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBFirst.EFProject", "DBFirst.EFProject\DBFirst.EFProject.csproj", "{75AF4E0F-D374-453D-886F-38407C426FF9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{C355C606-BD03-42E3-9EBD-A477976D4059}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C355C606-BD03-42E3-9EBD-A477976D4059}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C355C606-BD03-42E3-9EBD-A477976D4059}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75AF4E0F-D374-453D-886F-38407C426FF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75AF4E0F-D374-453D-886F-38407C426FF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75AF4E0F-D374-453D-886F-38407C426FF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75AF4E0F-D374-453D-886F-38407C426FF9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
