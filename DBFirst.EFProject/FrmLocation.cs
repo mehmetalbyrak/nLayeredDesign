@@ -20,9 +20,23 @@ namespace DBFirst.EFProject
         EFTravelDBEntities db = new EFTravelDBEntities();
         private void btnList_Click(object sender, EventArgs e)
         {
-            var values = db.Locations.ToList();
+            var values = db.Locations
+                .Select(location => new
+                {
+                    location.LocationId,
+                    location.LocationCity,
+                    location.LocationCountry,
+                    location.LocationCapacity,
+                    location.LocationPrice,
+                    location.DayNight,
+                    location.GuideId,
+                    GuideName = location.Guide.GuidName + " " + location.Guide.GuidLastname
+                })
+                .ToList();
+
             dataGridView1.DataSource = values;
         }
+
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -77,6 +91,7 @@ namespace DBFirst.EFProject
             updatedValue.LocationCity = txtLocationCity.Text;
             updatedValue.LocationCountry = txtLocationCountry.Text;
             updatedValue.GuideId = int.Parse(cmbGuideId.SelectedValue.ToString());
+
             db.SaveChanges();
             MessageBox.Show("update process is done :d");
         }
