@@ -14,10 +14,13 @@ The application utilizes **Entity Framework LINQ methods** to query and analyze 
 - **`Select`**: Projects specific fields (e.g., guide names or trip destinations).
 - **`FirstOrDefault`**: Retrieves the first matching record or a default value if none exist.
 
+
+
+## Project Overview
+
 These methods are combined to efficiently calculate and present various statistics, such as:
 
-- image to here :d
-
+![Application Files](DBFirst.EFProject/Images/screenshot.PNG)
 
 ## Technologies Used
 
