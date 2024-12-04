@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace nLayeredDesign.Presentation
 {
-    public partial class Form1 : Form
+    public partial class FrmCatageory : Form
     {
-        public Form1()
+        public FrmCatageory()
         {
             InitializeComponent();
+        }
+
+        private void btnExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
