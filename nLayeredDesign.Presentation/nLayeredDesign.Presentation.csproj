@@ -56,16 +56,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FrmCatageory.cs">
+    <Compile Include="FrmCategory.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmCatageory.Designer.cs">
-      <DependentUpon>FrmCatageory.cs</DependentUpon>
+    <Compile Include="FrmCategory.Designer.cs">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmCatageory.resx">
-      <DependentUpon>FrmCatageory.cs</DependentUpon>
+    <EmbeddedResource Include="FrmCategory.resx">
+      <DependentUpon>FrmCategory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -94,6 +94,14 @@
     <ProjectReference Include="..\nLayeredDesign.Business\nLayeredDesign.Business.csproj">
       <Project>{ceb796af-35ab-4e86-834f-adfe9f7bb62c}</Project>
       <Name>nLayeredDesign.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nLayeredDesign.DataAccess\nLayeredDesign.DataAccess.csproj">
+      <Project>{C00CB6C7-18DA-4D0F-A00C-FC9EC7447F3D}</Project>
+      <Name>nLayeredDesign.DataAccess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\nLayeredDesign.Entity\nLayeredDesign.Entity.csproj">
+      <Project>{39FAB1DC-2401-45A2-BA16-6292D417DE96}</Project>
+      <Name>nLayeredDesign.Entity</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

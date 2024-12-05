@@ -1,6 +1,6 @@
 ﻿namespace nLayeredDesign.Presentation
 {
-    partial class FrmCatageory
+    partial class FrmCategory
     {
         /// <summary>
         /// Required designer variable.
@@ -69,6 +69,7 @@
             this.btnList.TabIndex = 2;
             this.btnList.Text = "List";
             this.btnList.UseVisualStyleBackColor = true;
+            this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
             // dataGridView1
             // 
@@ -133,6 +134,7 @@
             this.btnAdd.TabIndex = 12;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -142,6 +144,7 @@
             this.btnDelete.TabIndex = 13;
             this.btnDelete.Text = "Delete";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnUpdate
             // 
@@ -151,6 +154,7 @@
             this.btnUpdate.TabIndex = 14;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // btnGetById
             // 
@@ -160,6 +164,7 @@
             this.btnGetById.TabIndex = 15;
             this.btnGetById.Text = "Get By Id";
             this.btnGetById.UseVisualStyleBackColor = true;
+            this.btnGetById.Click += new System.EventHandler(this.btnGetById_Click);
             // 
             // btnExit
             // 
@@ -171,7 +176,7 @@
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // FrmCatageory
+            // FrmCategory
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -190,7 +195,7 @@
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.txtCategoryId);
             this.Controls.Add(this.lblCategoryId);
-            this.Name = "FrmCatageory";
+            this.Name = "FrmCategory";
             this.Text = "Category UI";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

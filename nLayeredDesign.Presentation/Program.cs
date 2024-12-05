@@ -16,7 +16,7 @@ namespace nLayeredDesign.Presentation
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmCatageory());
+            Application.Run(new FrmCategory());
         }
     }
 }
