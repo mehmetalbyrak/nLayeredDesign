@@ -43,7 +43,10 @@ namespace nLayeredDesign.Presentation
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            
+            int toBeDeletedId = int.Parse(txtProductId.Text);
+            var toBeDeletedValue = _productService.TGetById(toBeDeletedId);
+            _productService.TDelete(toBeDeletedValue);
+            MessageBox.Show("Deleting Process is Completed");
         }
 
         private void FrmProduct_Load(object sender, EventArgs e)

@@ -15,14 +15,9 @@ namespace nLayeredDesign.Entity.Concrete
         public int ProductPrice { get; set; }
         public string ProductDescription { get; set; }
 
-        //public int CatgeoryId { get; set; }
         public int CategoryId { get; set; }
         public virtual Category Category { get; set; }
 
         public ICollection<Order> Orders { get; set; }
-
-
-        //[NotMapped]
-        //public string CategoryName { get; set; }
     }
 }
