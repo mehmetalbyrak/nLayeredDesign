@@ -75,5 +75,10 @@ namespace nLayeredDesign.Presentation
 
             _categoryService.TUpdate(updatedValue);
         }
+
+        private void FrmCategory_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

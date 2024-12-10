@@ -1,4 +1,5 @@
-﻿using nLayeredDesign.Business.Concrete;
+﻿using nLayeredDesign.Business.Abstract;
+using nLayeredDesign.Business.Concrete;
 using nLayeredDesign.DataAccess.EntityFramework;
 using System;
 using System.Collections.Generic;
@@ -14,12 +15,14 @@ namespace nLayeredDesign.Presentation
 {
     public partial class FrmProduct : Form
     {
+        private readonly IProductService _productService;
         public FrmProduct()
         {
             InitializeComponent();
+            _productService = new ProductManager(new EFProductDAL());
         }
 
-        ProductManager productManager = new ProductManager(new EFProductDAL());
+        
 
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -28,19 +31,24 @@ namespace nLayeredDesign.Presentation
 
         private void btnList_Click(object sender, EventArgs e)
         {
-            var values = productManager.TGetAll();
+            var values = _productService.TGetAll();
             dataGridView1.DataSource = values;
         }
 
         private void btnListv2_Click(object sender, EventArgs e)
         {
-            var values = productManager.TGetProductsWithCategory();
+            var values = _productService.TGetProductsWithCategory();
             dataGridView1.DataSource = values;
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void FrmProduct_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
