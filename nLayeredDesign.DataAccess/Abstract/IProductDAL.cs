@@ -9,5 +9,6 @@ namespace nLayeredDesign.DataAccess.Abstract
 {
     public interface IProductDAL : IGenericDAL<Product>
     {
+        List<Object> GetProductsWithCategory();
     }
 }

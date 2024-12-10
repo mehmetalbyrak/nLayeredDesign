@@ -9,6 +9,6 @@ namespace nLayeredDesign.Business.Abstract
 {
     public interface IProductService : IGenericService<Product>
     {
-
+        List<Object> TGetProductsWithCategory();
     }
 }
