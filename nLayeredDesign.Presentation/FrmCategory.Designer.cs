@@ -197,6 +197,7 @@
             this.Controls.Add(this.lblCategoryId);
             this.Name = "FrmCategory";
             this.Text = "Category UI";
+            this.Load += new System.EventHandler(this.FrmCategory_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
